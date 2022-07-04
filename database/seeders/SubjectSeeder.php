@@ -20,6 +20,7 @@ class SubjectSeeder extends Seeder
             'description' => 'One Piece Two Piece Mom Piece',
             'price' => '225.5',
             'learning_hour' => '25',
+            'tutor_id' => '1',
         ]);
 
         Subject::create([
@@ -27,6 +28,7 @@ class SubjectSeeder extends Seeder
             'description' => 'indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie indomie ',
             'price' => '5.5',
             'learning_hour' => '100',
+            'tutor_id' => '1',
         ]);
     }
 }

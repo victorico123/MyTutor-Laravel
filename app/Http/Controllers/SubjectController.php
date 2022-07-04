@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Subject;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
 class SubjectController extends Controller
@@ -31,6 +32,7 @@ class SubjectController extends Controller
         $obj->description = $request->description;
         $obj->price = $request->price;
         $obj->learning_hour = $request->hour;
+        $obj->tutor_id = Auth::user()->id;
 
         $obj->save();
 

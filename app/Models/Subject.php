@@ -14,5 +14,6 @@ class Subject extends Model
         'description',
         'price',
         'learning_hour',
+        'tutor,id',
     ];
 }

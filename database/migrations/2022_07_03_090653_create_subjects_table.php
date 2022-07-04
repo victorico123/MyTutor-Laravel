@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('description');
             $table->double('price');
             $table->integer('learning_hour');
+            $table->integer('tutor_id');
             $table->timestamps();
         });
     }
